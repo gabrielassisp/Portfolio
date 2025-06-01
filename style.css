@@ -1,36 +1,86 @@
-body {
+/* Reset e fontes */
+* {
   margin: 0;
-  font-family: 'Courier New', monospace;
-  background: url('fundo-tecnologico.gif') no-repeat center center fixed;
-  background-size: cover;
-  color: white;
-}
-
-nav {
-  background-color: #1c1c1c;
-  padding: 10px;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
   padding: 0;
+  box-sizing: border-box;
 }
 
-nav ul li {
-  display: inline-block;
-  margin: 0 15px;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0e0e0e;
+  color: #fff;
+  line-height: 1.6;
 }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
 }
 
-.hero {
-  margin-top: 100px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 30px;
+.image-container img {
+  width: 300px;
   border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.text-container {
+  max-width: 600px;
+}
+
+.text-container h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.text-container h2 {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #00cfff;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #fff;
+  color: #000;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #00cfff;
+  color: #fff;
+  box-shadow: 0 0 10px #00cfff;
+}
+
+.section {
+  padding: 60px 20px;
+  background-color: #121212;
+  border-top: 1px solid #333;
+}
+
+.section h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.section p {
+  max-width: 800px;
+  color: #ccc;
+  font-size: 1em;
 }
