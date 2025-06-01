@@ -1,122 +1,157 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gabriel Assis Pereira | Portfólio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: 'Montserrat', sans-serif;
-      background-color: #111;
-      color: white;
     }
+
+    body {
+      background-color: #0e0e0e;
+      color: white;
+      line-height: 1.6;
+    }
+
     header {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      padding: 20px 40px;
-      background-color: #111;
+      justify-content: center;
+      padding: 40px 20px;
+      background-color: #0e0e0e;
     }
-    nav a {
-      margin: 0 15px;
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    nav a:hover {
-      color: #00d9ff;
-    }
-    .hero {
+
+    .container {
       display: flex;
-      flex-wrap: wrap;
-      padding: 60px 40px;
       align-items: center;
-      background-color: #111;
-    }
-    .hero-image {
-      flex: 1 1 300px;
-    }
-    .hero-image img {
+      max-width: 1200px;
       width: 100%;
-      max-width: 350px;
-      border-radius: 12px;
     }
-    .hero-text {
-      flex: 2 1 400px;
-      padding-left: 40px;
+
+    .imagem {
+      flex: 1;
+      padding-right: 40px;
     }
-    .hero-text h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
+
+    .imagem img {
+      width: 100%;
+      border-radius: 8px;
     }
-    .hero-text h2 {
-      color: #00d9ff;
-      font-size: 1.2em;
-      margin-bottom: 30px;
+
+    .conteudo {
+      flex: 2;
     }
-    .buttons button {
-      margin-right: 10px;
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    h2 {
+      color: #00d2ff;
+      font-weight: 600;
+      font-size: 1.2rem;
+      margin: 10px 0 30px;
+    }
+
+    .botoes button {
+      margin: 5px;
       padding: 10px 20px;
-      font-size: 1em;
+      background-color: #fff;
       border: none;
-      border-radius: 5px;
-      background-color: white;
-      color: black;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: all 0.3s ease;
       cursor: pointer;
-      transition: 0.3s ease;
     }
-    .buttons button:hover {
-      background-color: #00d9ff;
-      color: white;
+
+    .botoes button:hover {
+      background-color: #00d2ff;
+      color: #0e0e0e;
+      box-shadow: 0 0 12px #00d2ff;
     }
+
     section {
-      padding: 60px 40px;
-      background-color: #181818;
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
     }
-    section h2 {
-      font-size: 2em;
+
+    section h3 {
+      font-size: 1.8rem;
       margin-bottom: 20px;
+      color: #00d2ff;
     }
+
     section p {
-      line-height: 1.6;
+      color: #e0e0e0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      color: #888;
     }
   </style>
 </head>
 <body>
   <header>
-    <div><strong>Gabriel Assis Pereira</strong></div>
-    <nav>
-      <a href="#inicio">Início</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#habilidades">Habilidades</a>
-      <a href="#experiencia">Experiência</a>
-      <a href="#portfolio">Portfólio de Projetos</a>
-    </nav>
-  </header>
-
-  <div class="hero" id="inicio">
-    <div class="hero-image">
-      <img src="imagem-do-laptop.png" alt="Gráfico em tela de laptop">
-    </div>
-    <div class="hero-text">
-      <h1>GABRIEL ASSIS PEREIRA</h1>
-      <h2>Futuro Analista de Dados | Projetos Pessoais</h2>
-      <div class="buttons">
-        <button onclick="document.getElementById('sobre').scrollIntoView({behavior: 'smooth'})">Sobre</button>
-        <button onclick="document.getElementById('portfolio').scrollIntoView({behavior: 'smooth'})">Portfólio de Projetos</button>
-        <button onclick="document.getElementById('habilidades').scrollIntoView({behavior: 'smooth'})">Habilidades</button>
-        <button onclick="document.getElementById('experiencia').scrollIntoView({behavior: 'smooth'})">Experiência</button>
+    <div class="container">
+      <div class="imagem">
+        <img src="imagem-do-laptop.png" alt="Análise de Dados">
+      </div>
+      <div class="conteudo">
+        <h1>Gabriel Assis Pereira</h1>
+        <h2>Futuro Analista de Dados | Projetos Pessoais</h2>
+        <div class="botoes">
+          <button onclick="document.getElementById('sobre').scrollIntoView({behavior: 'smooth'})">Sobre</button>
+          <button onclick="document.getElementById('portfolio').scrollIntoView({behavior: 'smooth'})">Portfólio de Projetos</button>
+          <button onclick="document.getElementById('habilidades').scrollIntoView({behavior: 'smooth'})">Habilidades</button>
+          <button onclick="document.getElementById('experiencia').scrollIntoView({behavior: 'smooth'})">Experiência</button>
+        </div>
       </div>
     </div>
-  </div>
+  </header>
 
   <section id="sobre">
-    <h2>Sobre</h2>
-    <p>Sou apaixonado por dados, com formação técnica em eletrônica e atualmente cursando Gestão Industrial e Administração. Atuo na área de engenharia industrial como jovem aprendiz, onde aplico conhecimentos em Excel e Power BI para melhorar processos. Busco atuar como analista de dados e venho desenvolvendo projetos pessoais para fortalecer essa trajetória.</p>
+    <h3>Sobre</h3>
+    <p>Sou estudante apaixonado por dados, com formação técnica em eletrônica e atualmente cursando Administração e Gestão Industrial. Desenvolvo projetos pessoais para aprimorar minhas habilidades em análise de dados, automação e visualização com Excel, Power BI, Python e SQL.</p>
   </section>
 
-  <!-- Outras seções futuras podem ser adicionadas aqui -->
+  <section id="habilidades">
+    <h3>Habilidades</h3>
+    <ul>
+      <li>Excel Avançado (dashboards e automação)</li>
+      <li>Power BI (ETL, modelagem e visualização)</li>
+      <li>Python (pandas, matplotlib)</li>
+      <li>SQL Básico</li>
+      <li>Organização, comunicação e trabalho em equipe</li>
+    </ul>
+  </section>
+
+  <section id="experiencia">
+    <h3>Experiência</h3>
+    <p>Atualmente sou jovem aprendiz na Alpargatas, onde apoio a engenharia industrial com criação de planilhas e análise de dados. Também atuei como aprendiz comercial no Itaú, onde desenvolvi habilidades de comunicação e organização.</p>
+  </section>
+
+  <section id="portfolio">
+    <h3>Portfólio de Projetos</h3>
+    <ul>
+      <li>Dashboard de E-commerce (Power BI) com dados da Olist</li>
+      <li>Controle de Estoque com Excel e VBA</li>
+      <li>Sistema de irrigação automatizado (HTML/JS)</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Feito com ♥ por Gabriel Assis Pereira</p>
+  </footer>
 </body>
 </html>
